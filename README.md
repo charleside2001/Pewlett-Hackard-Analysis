@@ -72,7 +72,7 @@ ORDER BY COUNT(emp_no) DESC;)`
 
 `retiring_titles.png` 
  
- ![retiring_titles.png](https://github.com/charleside2001/Pewlett-Hackard-Analysis/blob/main/Screenshots/retirement_titles.PNG)
+ ![retiring_titles.png](https://github.com/charleside2001/Pewlett-Hackard-Analysis/blob/main/Screenshots/retiring_titles.PNG)
  
  
  `mentor_count.png` 
