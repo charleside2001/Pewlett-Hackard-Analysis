@@ -44,7 +44,7 @@ INTO mentor_count
 FROM mentorship_eligibilty
 GROUP BY title
 ORDER BY COUNT(emp_no) DESC;
-
+ -- Create younger_employee_count table from employees
 SELECT COUNT(emp_no) , gender
 INTO younger_employee_count
 FROM employees
