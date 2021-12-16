@@ -37,3 +37,17 @@ INNER JOIN titles
 WHERE (dept_emp.to_date = ('9999-01-01')) 
 AND (employees.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 ORDER BY emp_no;	
+
+--Create mentor_count table from mentorship_eligibilty
+SELECT COUNT(emp_no) , title
+INTO mentor_count
+FROM mentorship_eligibilty
+GROUP BY title
+ORDER BY COUNT(emp_no) DESC;
+
+SELECT COUNT(emp_no) , gender
+INTO younger_employee_count
+FROM employees
+WHERE (birth_date BETWEEN '1965-01-01' AND '1965-12-31')
+GROUP BY gender
+ORDER BY COUNT(emp_no) DESC;
